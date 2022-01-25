@@ -1,0 +1,22 @@
+
+.Login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(59, 58, 58);
+
+}
+
+.Login .image-container {
+    width: 60vw;
+}
+
+
+@media (max-width:600px) {
+    .Login {
+        padding-left: 20%;
+    }
+    .Login .image-container {
+        display: none;
+    }
+}

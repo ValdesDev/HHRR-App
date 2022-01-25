@@ -20,3 +20,4 @@ All your files and folders are presented as a tree in the file explorer. You can
 ## About
 
 This project was made in collaboration with: [@TatianaPrada](https://github.com/TatianaPrada) and [@raqhidcor](https://github.com/raqhidcor)
+

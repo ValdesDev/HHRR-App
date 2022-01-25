@@ -1,0 +1,20 @@
+.Signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(59, 58, 58);
+
+}
+
+.Signup .image-container {
+    width: 60vw;
+}
+
+@media (max-width:600px) {
+    .Signup {
+        padding-left: 20%;
+    }
+    .Signup .image-container {
+        display: none;
+    }
+}

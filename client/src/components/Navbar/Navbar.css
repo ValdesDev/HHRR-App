@@ -1,48 +1,48 @@
-nav {
-  display: flex;
-  padding: 1em;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  background: #282c34;
-  font-weight: 600;
+.Navbar {
+  padding:0em 1em; 
 }
 
-.nav__projectName {
-  color: #e4f9ff;
-  text-decoration: none;
+.MuiSvgIcon-root {
+  color: whitesmoke
 }
 
-.authLink {
-  color: #61dafb;
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
+.link img {
+  width: 50px;
+  margin-right: 6%;
 }
 
-.authLink + .authLink {
-  padding: 1em;
+.link p {
+  font-family: 'Righteous', cursive;
+  font-size: 25px;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+  color: whitesmoke
 }
 
-.authLink:hover {
-  color: #ffffff;
+.logo-div{
+  width: auto;
+  position: absolute;
 }
 
-.nav-logoutbtn {
-  font-family: inherit;
-  font-weight: inherit;
-  padding: 0.5em 1em;
-  margin-left: 1em;
-  background-color: #5595ff;
-  box-shadow: 0 0 5px 0 aliceblue;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  color: #e3f2ff;
-  transition: all 0.2s ease-in-out;
-  position: sticky;
-  top: 0;
-}
-
-.nav-logoutbtn:hover {
-  transform: scale(1.05);
-  background-color: #d13e3e;
+@media (max-width:600px) {
+  /* .Navbar {
+    max-width: 100vw;
+  } */
+  .Navbar .logo-div{
+    width: 25%;
+    position: initial;
+    margin-right: 12vw;
+    padding: 0;
+  }
+  .Navbar .logo-div p {
+    display: none;
+  }
+  .MuiButton-root {
+    display: flex;
+    flex-direction: column;
+  }
+  .MuiListItem-root {
+    padding: 0;
+  }
 }

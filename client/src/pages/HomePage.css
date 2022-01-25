@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&family=Thasadith:wght@700&display=swap');
+/* section one */
+
+.Home {
+  display: inline-flex;
+  flex-direction: column;
+  /* width: 70vw; */
+}
+
+.section-one {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-one .title {
+  font-family: 'Thasadith', sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 3%; 
+}
+
+.section-one .image-container {
+  width: 80%;
+}
+.section-one .teamwork-img {
+  width: 100%;
+}
+
+.section-one .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-one .text-container {
+  width: 90%;
+  margin: 0 3% 0 3%;
+}
+
+.section-one .text-container p {
+  font-size: 1.3em;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* section two */
+
+.section-two {
+  display: flex;
+}
+
+.image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 80%;
+}
+
+.text-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.text-container p {
+  font-size: 1.3em;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;;
+}
+
+@media (max-width:600px) {
+  .section-one .title {
+    font-size: 2.2em;
+    margin: 1;
+  }
+  .section-one .text-container p  {
+    font-size: 1em;
+  }
+  .text-container p {
+    font-size: 0.8em;
+  }
+  .section-two {
+    margin: 4% 0;
+  }
+  .Home {
+    width: 95vw;
+  }
+
+}
