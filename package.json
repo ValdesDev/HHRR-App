@@ -1,21 +1,21 @@
 {
-  "name": "hr-app-server",
+  "name": "hr-app",
   "version": "0.0.0",
   "private": true,
   "workspaces":[
-    "client",
-    "server"
+    "worksplaces/*"
   ],
   "engines": {
-    "npm": "7.13.0",
-    "node": "16.2.0"
+    "npm": "7",
+    "node": "16"
   },
   "scripts": {
-    "client:build": "cd client && npm install",
-    "server:build": "cd server && npm install",
-    "postinstall": "npm run server:build && npm run client:build",
-    "server:start": "cd server && npm run start",
-    "client:start": "cd client && npm run start",
-    "start": "npm run start -w client && npm run start -w server"
+    "start": "npm run start --prefix ./workspaces/server",
+    "client:dev": "npm run serve --prefix ./workspaces/client",
+    "client:build": "npm run build --prefix ./workspaces/client",
+    "server:dev": "npm run start:dev --prefix ./workspaces/server",
+    "prebuild": "npm run client:build",
+    "build": "npm run build --prefix ./workspaces/client",
+    "command": "npm run command --prefix ./workspaces/server"
   }
 }

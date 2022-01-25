@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const uploader = require("./../config/cloduinary.config")
+const uploader = require("../config/cloduinary.config")
 
 router.post('/image', uploader.single('imageData'), (req, res) =>{
 
