@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "client:build": "cd client && npm install && npm run build",
-    "server:build": "cd server && npm install && npm run build",
+    "client:build": "cd client && npm install",
+    "server:build": "cd server && npm install",
     "postinstall": "npm run server:build && npm run client:build",
-    "start": "node client/dist/app.js"
+    "server:start": "cd server && npm run start",
+    "client:start": "cd ../client && npm run start",
+    "start": "npm run client:start && npm run server:start"
   },
   "dependencies": {
     "@types/date-fns": "^2.6.0",
