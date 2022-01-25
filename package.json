@@ -17,5 +17,8 @@
     "prebuild": "npm run client:build",
     "build": "npm run build --prefix ./workspaces/client",
     "command": "npm run command --prefix ./workspaces/server"
+  },
+  "devDependencies": {
+    "rimraf": "* 3.0.2"
   }
 }
