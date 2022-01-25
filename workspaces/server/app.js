@@ -12,7 +12,7 @@ const express = require("express");
 const app = express();
 
 const path = require('path')
-app.use(express.static(path.join(__dirname, "public"))) 
+app.use(express.static(path.join(__dirname, "..", "client", "build"))) 
 
 // ℹ️ This function is getting exported from the config folder. It runs most pieces of middleware
 require("./config")(app);
