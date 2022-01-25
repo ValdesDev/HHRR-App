@@ -16,6 +16,6 @@
     "postinstall": "npm run server:build && npm run client:build",
     "server:start": "cd server && npm run start",
     "client:start": "cd client && npm run start",
-    "start": "npm  run start -w client run start && npm run start -w server"
+    "start": "npm run start -w client && npm run start -w server"
   }
 }
