@@ -14,7 +14,7 @@
     "client:build": "npm run build --prefix ./workspaces/client",
     "prebuild": "npm run client:build",
     "server:dev": "npm run start --prefix ./workspaces/server",
-    "start": "npm run start:prod --prefix ./workspaces/server",
+    "start": "npm run start --prefix ./workspaces/server",
     "build": "npm run build --prefix ./workspaces/client",
     "command": "npm run command --prefix ./workspaces/server"
   },
