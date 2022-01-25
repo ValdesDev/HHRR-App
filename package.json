@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "npm client:build": "cd client && npm install && npm run build",
-    "npm server:build": "cd server && npm install && npm run build",
-    "postinstall": "npm client:build && npm server:build",
+    "client:build": "cd client && npm install && npm run build",
+    "server:build": "cd server && npm install && npm run build",
+    "postinstall": "npm run server:build && npm run client:build",
     "start": "node client/dist/app.js"
   },
   "dependencies": {
