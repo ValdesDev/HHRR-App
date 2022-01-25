@@ -13,6 +13,11 @@ Grouping is a software focus on **automatize** HR tasks. User can manage employe
 
 All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
 
+     CLIENT
+     npm install
+     npm run start
+     
+     SERVER
      npm install
      npm run start
 
