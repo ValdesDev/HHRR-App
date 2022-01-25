@@ -7,7 +7,7 @@ Grouping is a software focus on **automatize** HR tasks. User can manage employe
  - **Task Management:** Track employee's tasks.
  - **Employees & Company portal:** Different access and roles. 
  
- DEMO: 
+ DEMO: [https://grouping-rh.herokuapp.com/(https://grouping-rh.herokuapp.com/)]
 
 ## How to start
 
