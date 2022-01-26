@@ -22,9 +22,13 @@ require("./config")(app);
 const allRoutes = require("./routes");
 app.use("/api", allRoutes);
 
+
+app.get('*', (req,res) =>{
+    res.sendFile(path.join(__dirname, "..", '/client/build/index.html'));
+});
+
+
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);
-
-app.use((req, res) => res.sendFile(path.join(__dirname, "..", "client", "build"))); 
 
 module.exports = app;
